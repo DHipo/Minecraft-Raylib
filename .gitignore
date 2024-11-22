@@ -38,4 +38,4 @@ CMakeFiles
 *.ninja
 *.cmake
 compile_commands.json
-CMakeLists.txt
+CMakeCache.txt
