@@ -23,9 +23,17 @@ if (NOT raylib_FOUND) # If there's none, fetch and build raylib
 endif()
 
 # Our Project
+# Add include directory
+# Add source files
+file(GLOB_RECURSE SOURCES ${CMAKE_SOURCE_DIR}/src/*.cpp)
 
-add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/main.cpp)
-#set(raylib_VERBOSE 1)
+# Define the executable
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+# Add include directory
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/include)
+
+# Link raylib
 target_link_libraries(${PROJECT_NAME} raylib)
 
 # Web Configurations
