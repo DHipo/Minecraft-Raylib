@@ -13,7 +13,7 @@ public:
 
 	void draw() override {
 		DrawCubeWiresV(m_position, m_size, BLACK);
-        DrawCubeV(m_position, m_size, m_color);
+		DrawCubeV(m_position, m_size, m_color);
 	}
 
 	void update() override {
