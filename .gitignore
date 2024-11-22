@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+_deps
+CMakeFiles
+.ninja_deps
+.ninja_log
+*.ninja
+*.cmake
+compile_commands.json
+CMakeLists.txt
